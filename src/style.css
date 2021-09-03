@@ -2,3 +2,26 @@
 body {
   background-color: green;
 }
+
+.card {
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  width: 350px;
+  height: 500px;
+  border-radius: 5%;
+}
+
+.upper {
+  font-size: 75px;
+}
+
+.number {
+  font-size: 125px;
+  font-weight: bolder;
+}
+
+.botton {
+  font-size: 75px;
+  transform: rotate(180deg);
+}
