@@ -9,6 +9,27 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
   createCard(generateSuit(), generateCardNumber());
+
+  let buttonCard = document.querySelector(".buttonCard");
+  buttonCard.addEventListener("click", () => {
+    createCard(generateSuit(), generateCardNumber());
+  });
+
+  window.setInterval(() => {
+    createCard(generateSuit(), generateCardNumber());
+  }, 10000);
+
+  let card = document.querySelector(".card");
+  let cardHeight = document.querySelector(".cardHeight");
+  cardHeight.addEventListener("change", e => {
+    console.log(card);
+    console.log(e.target.value);
+    card.style.height = e.target.value + "px";
+  });
+  let cardWidth = document.querySelector(".cardWidth");
+  cardWidth.addEventListener("change", e => {
+    card.style.width = e.target.value + "px";
+  });
 };
 
 let suit = ["♦", "♥", "♠", "♣"];
